@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 42 100% 98%;
+    --foreground: 28 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 28 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 28 25% 15%;
+
+    --primary: 32 98% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 48 100% 92%;
+    --secondary-foreground: 28 25% 15%;
+
+    --muted: 48 30% 95%;
+    --muted-foreground: 28 15% 45%;
+
+    --accent: 36 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 48 25% 88%;
+    --input: 48 25% 88%;
+    --ring: 32 98% 56%;
+
+    --radius: 1rem;
+
+    /* UV Risk Level Colors */
+    --uv-low: 142 76% 36%;
+    --uv-moderate: 45 93% 47%;
+    --uv-high: 24 95% 53%;
+    --uv-very-high: 0 72% 51%;
+    --uv-extreme: 280 67% 44%;
+
+    /* Sun Gradient */
+    --gradient-sun: linear-gradient(135deg, hsl(48 100% 67%) 0%, hsl(32 98% 56%) 50%, hsl(14 91% 60%) 100%);
+    --gradient-sunset: linear-gradient(180deg, hsl(24 95% 53%) 0%, hsl(14 91% 60%) 50%, hsl(280 67% 44%) 100%);
+    
+    /* Glass Effect */
+    --glass-bg: hsla(0 0% 100% / 0.1);
+    --glass-border: hsla(0 0% 100% / 0.2);
+
+    /* Shadows */
+    --shadow-glow: 0 8px 32px hsla(32 98% 56% / 0.3);
+    --shadow-card: 0 4px 24px hsla(0 0% 0% / 0.1);
+  }
+
+  .dark {
+    --background: 28 35% 8%;
+    --foreground: 48 20% 95%;
+
+    --card: 28 30% 12%;
+    --card-foreground: 48 20% 95%;
+
+    --popover: 28 30% 12%;
+    --popover-foreground: 48 20% 95%;
+
+    --primary: 32 98% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 28 20% 18%;
+    --secondary-foreground: 48 20% 95%;
+
+    --muted: 28 20% 18%;
+    --muted-foreground: 48 15% 65%;
+
+    --accent: 36 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 48 20% 95%;
+
+    --border: 28 20% 22%;
+    --input: 28 20% 22%;
+    --ring: 32 98% 56%;
+
+    --glass-bg: hsla(28 30% 12% / 0.4);
+    --glass-border: hsla(0 0% 100% / 0.1);
+
+    --shadow-glow: 0 8px 32px hsla(32 98% 56% / 0.4);
+    --shadow-card: 0 4px 24px hsla(0 0% 0% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
