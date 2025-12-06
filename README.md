@@ -26,6 +26,7 @@ Icons	Lucide React
 Tools	VS Code, Thunder Client/Postman
 
 🌍 Features
+
 🔸 Real-Time UV Detection
 Auto-detects user location
 Fetches UV index and displays risk level
